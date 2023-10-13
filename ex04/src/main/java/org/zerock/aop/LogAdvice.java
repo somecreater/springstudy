@@ -16,7 +16,7 @@ public class LogAdvice {
 		log.info("============================");
 	}
 	
-	@Before("executon(* org.serock.service.SampleService*.doAdd(String,String)) && args(str1, str2)")
+	@Before("execution(* org.zerock.service.SampleService*.doAdd(String,String)) && args(str1, str2)")
 	public void logBeforeWithParam(String str1, String str2) {
 		log.info("str1: "+str1);
 		log.info("str2: "+str2);
