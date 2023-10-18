@@ -2,6 +2,7 @@ package org.zerock.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.zerock.mapper.Sample1Mapper;
 import org.zerock.mapper.Sample2Mapper;
 
@@ -18,6 +19,8 @@ public class SampleTxServiceImpl implements SampleTxService{
 	@Setter(onMethod_= {@Autowired})
 	private Sample2Mapper mapper2;
 	
+	//모두 처리되거나 아니면 아예 처리하지 않는다
+	@Transactional
 	@Override
 	public void addData(String value) {
 		

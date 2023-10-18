@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 
 import lombok.extern.log4j.Log4j;
 
+//aop를 구현했다 핵심로직이 아닌 주변의 관심사(에러처리, 로깅)
 @Aspect
 @Log4j
 @Component
