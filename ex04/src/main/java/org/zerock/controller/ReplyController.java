@@ -15,6 +15,7 @@ import org.zerock.domain.Criteria;
 import org.zerock.domain.ReplyPageDTO;
 import org.zerock.domain.ReplyVO;
 import org.zerock.service.ReplyService;
+import org.zerock.mapper.*;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j;
